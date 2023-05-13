@@ -1,18 +1,14 @@
-html,
-body {
-  position: relative;
-  font-family: 'Inter',sans-serif;
-}
 
 body {
   margin: 0 12px;
   padding: 0;
-  color:#000;
-  height: 100vh;
+  max-height: 100vh;
 }
 
 *{
   box-sizing: border-box;
+  font-family: 'Inter',sans-serif;
+  color:#000;
 }
 
 nav{
@@ -20,7 +16,7 @@ nav{
   width: 100%;
 }
 section{
-  margin:24px 0;
+  margin-top:24px;
 }
 .logo{
   width: 226px;
@@ -44,7 +40,7 @@ h4{
   font-weight: 500;
 }
 .recent-profiles-container{
-  margin:24px 0 36px 0;
+  margin:24px 0;
   display: flex;
   gap: 12px;
 }
@@ -70,8 +66,12 @@ span{
 }
 
 .following-section{
-  height: calc(100vh - 350px);
+  height: calc(100vh - 292px);
   overflow-y: scroll;
+}
+
+.following-section::-webkit-scrollbar{
+  display: none!important;
 }
 
 .following-container{
@@ -81,6 +81,10 @@ span{
   column-gap: 12px;
   row-gap: 24px;
   overflow-y: hidden;
+}
+
+.following-container::-webkit-scrollbar{
+  display: none!important;
 }
 
 .following-card{
