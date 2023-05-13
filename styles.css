@@ -1,0 +1,157 @@
+html,
+body {
+  position: relative;
+  font-family: 'Inter',sans-serif;
+}
+
+body {
+  margin: 0 12px;
+  padding: 0;
+  color:#000;
+  height: 100vh;
+}
+
+*{
+  box-sizing: border-box;
+}
+
+nav{
+  margin: 16px 0 24px;
+  width: 100%;
+}
+section{
+  margin:24px 0;
+}
+.logo{
+  width: 226px;
+  display: block;
+  margin:0 auto;
+}
+.search-bar{
+  margin-top:24px;
+  background: #F0F0F0;
+  width: 100%;
+  height: 38px;
+  padding: 6px;
+  outline: 0;
+  border: 0;
+  border-radius: 8px;
+}
+
+h4{
+  font-size: 14px;
+  margin: 0;
+  font-weight: 500;
+}
+.recent-profiles-container{
+  margin:24px 0 36px 0;
+  display: flex;
+  gap: 12px;
+}
+
+.recent-card .recent-card-image{
+  width: 76px;
+  height: 76px;
+  overflow: hidden;
+  border-radius: 24px;
+}
+
+.recent-card .recent-card-image img{
+  width:100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+span{
+  display: block;
+  margin-top:4px;
+  font-size: 12px;
+  text-align: center;
+}
+
+.following-section{
+  height: calc(100vh - 350px);
+  overflow-y: scroll;
+}
+
+.following-container{
+  margin:24px 0;
+  display: grid;
+  grid-template-columns: 75px 75px 75px 75px;
+  column-gap: 12px;
+  row-gap: 24px;
+  overflow-y: hidden;
+}
+
+.following-card{
+  width: 75px;
+}
+
+.following-image-outline{
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+
+}
+
+.has-story{
+  background:linear-gradient(24deg, #FDBD4C 0%, #E211AF 100%);
+  padding:2px;
+
+}
+
+.has-story div{
+  width: 71px;
+  height: 71px;
+  border: 4px solid #fff;
+}
+
+.no-story{
+  background: #D2D2D2;
+  padding:1px;
+}
+
+.no-story div{
+  width: 73px;
+  height: 73px;
+  border: 5px solid #fff;
+}
+
+.following-image-outline div{
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.following-image-outline div img{
+  width: 100%;
+}
+
+
+
+/* GALLERY */
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+}
+
+.swiper-pagination{
+  background: rgba(0, 0, 0, 0.4);
+  border-radius: 30px;
+  padding:2px;
+}
+
+:root {
+    --swiper-theme-color: #fff;
+}
